@@ -1,6 +1,10 @@
 # LibraryTraining
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23 and JSon Server no need to take rest api explicitly , It just give a detailed crud operataion and lazyloading which making industry standard level.
+
+To start jsonserver using following command
+json-server --watch db.json 
+
 
 ## Development server
 
