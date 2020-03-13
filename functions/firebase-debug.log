@@ -1,0 +1,40 @@
+[debug] [2020-02-17T11:11:21.151Z] ----------------------------------------------------------------------
+[debug] [2020-02-17T11:11:21.155Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kganesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only=hosting,functions
+[debug] [2020-02-17T11:11:21.156Z] CLI Version:   7.13.0
+[debug] [2020-02-17T11:11:21.156Z] Platform:      win32
+[debug] [2020-02-17T11:11:21.156Z] Node Version:  v12.13.0
+[debug] [2020-02-17T11:11:21.162Z] Time:          Mon Feb 17 2020 16:41:21 GMT+0530 (India Standard Time)
+[debug] [2020-02-17T11:11:21.162Z] ----------------------------------------------------------------------
+[debug] [2020-02-17T11:11:21.163Z] 
+[debug] [2020-02-17T11:11:21.189Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-17T11:11:21.191Z] > authorizing via signed-in user
+[debug] [2020-02-17T11:11:21.192Z] [iam] checking project angular-sample-hosting-2 for permissions ["firebase.projects.get"]
+[debug] [2020-02-17T11:11:21.197Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-17T11:11:21.197Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-17T11:11:23.839Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-17T11:11:23.898Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/angular-sample-hosting-2:testIamPermissions  
+
+[debug] [2020-02-17T11:11:27.721Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-17T11:11:27.723Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angular-sample-hosting-2  
+ 
+[debug] [2020-02-17T11:11:30.584Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-17T11:11:30.590Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angular-sample-hosting-2/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: Emulator started at http://localhost:5001
+[debug] [2020-02-17T11:11:32.851Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "D:\TrainingApi\LibraryTraining\functions" for Cloud Functions...
+[debug] [2020-02-17T11:11:33.046Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-17T11:11:33.046Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-17T11:11:33.046Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-17T11:11:33.047Z] [worker-~diagnostic~-5d69b24d-6845-4192-ad66-87844fa3937a]: Assigning socketPath: \\?\pipe\D:\TrainingApi\LibraryTraining\functions\13636
+[debug] [2020-02-17T11:11:33.048Z] [worker-~diagnostic~-5d69b24d-6845-4192-ad66-87844fa3937a]: BUSY
+[info] i  hosting: Serving hosting files from: dist/LibraryTraining
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-02-17T11:11:34.145Z] [runtime-status] [13636] Functions runtime initialized. {"cwd":"D:\\TrainingApi\\LibraryTraining\\functions","node_version":"12.13.0"}
+[debug] [2020-02-17T11:11:34.147Z] [runtime-status] [13636] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-17T11:11:34.163Z] [runtime-status] [13636] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"D:\\TrainingApi\\LibraryTraining\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-17T11:11:34.178Z] [runtime-status] [13636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\TrainingApi\\LibraryTraining\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-17T11:11:34.182Z] [runtime-status] [13636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\TrainingApi\\LibraryTraining\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-17T11:11:34.633Z] [worker-~diagnostic~-5d69b24d-6845-4192-ad66-87844fa3937a]: IDLE

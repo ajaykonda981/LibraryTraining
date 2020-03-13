@@ -1,0 +1,84 @@
+<body>
+    <form id="form1">
+        <div id="head">
+            <!-- <img src="../assets/img/Untitled.jpg"> -->
+            <img src = "../assets/img/Untitled.jpg">
+            <!-- src\assets\Untitled.jpg -->
+        </div>
+        <div id="main">
+            <div id="menu">
+                <table style="width:100%">
+                    <tr>
+                      <td class="tblhead">
+                        Welcome
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center;background-color: #FFA76C;">
+                        <mat-label>Library Management</mat-label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage('Department')">Department</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage('Publication')">Publication</button>
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage('Book')">Book</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Book Report</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage('Student')">Student</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Student Report</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Issue Book</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Issue Report</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Return Book</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Penalty</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btnmenu" (click)="navigateToPage()">Logout</button>
+                      </td>
+                    </tr>
+                  </table>
+            </div>
+            <div id="detail"> 
+                <router-outlet></router-outlet>
+              </div>
+        </div>
+    </form>
+</body>

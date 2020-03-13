@@ -1,0 +1,360 @@
+{
+  "department": [
+    {
+      "id": 1,
+      "name": "Electronics & Communication Engieering",
+      "code": "E.C.E"
+    },
+    {
+      "id": 2,
+      "name": "Computer Science Engieering",
+      "code": "C.S.E"
+    },
+    {
+      "id": 3,
+      "name": "Civil Engieering",
+      "code": "C.E"
+    },
+    {
+      "id": 4,
+      "name": "Electrical & Electronics Engineering",
+      "code": "E.E.E"
+    },
+    {
+      "id": 5,
+      "name": "Mechanical Engieering",
+      "code": "M.E.CH"
+    },
+    {
+      "id": 6,
+      "name": "Bio Mediacal Engineering",
+      "code": "B.M.E"
+    },
+    {
+      "id": 7,
+      "name": "Information Technology Engineering.",
+      "code": "I.T"
+    },
+    {
+      "id": 8,
+      "name": "Aerospace Engineering",
+      "code": "A.E"
+    },
+    {
+      "id": 9,
+      "name": "Aeronautical Engineering",
+      "code": "A.N.E"
+    },
+    {
+      "id": 10,
+      "name": "Automobile Engineering",
+      "code": "A.T.E"
+    },
+    {
+      "id": 11,
+      "name": "Automation and Robotics Engineering",
+      "code": "A.R.E"
+    },
+    {
+      "id": 12,
+      "name": "Mechatronics Engineering",
+      "code": "M.CH.E"
+    },
+    {
+      "id": 13,
+      "name": "Chemical Engineering",
+      "code": "CH.E"
+    },
+    {
+      "id": 14,
+      "name": "Petroleum Engineering",
+      "code": "P.E"
+    },
+    {
+      "id": 15,
+      "name": "Agricultural and Food Engineering",
+      "code": "A.F.E"
+    },
+    {
+      "id": 16,
+      "name": "Applied Electronics and Instrumentation Engineering",
+      "code": "A.E.I.E"
+    },
+    {
+      "id": 17,
+      "name": "Biotechnology Engineering",
+      "code": "B.E"
+    },
+    {
+      "id": 18,
+      "name": "Nuclear Engineering",
+      "code": "N.E"
+    },
+    {
+      "id": 19,
+      "name": "Biomedical Engineering",
+      "code": "B.M.E"
+    },
+    {
+      "id": 20,
+      "name": "Dairy Technology",
+      "code": "D.T"
+    }
+  ],
+  "publication": [
+    {
+      "id": 21,
+      "name": "V.G.S Publication"
+    },
+    {
+      "id": 22,
+      "name": "SIA Publishers"
+    },
+    {
+      "id": 23,
+      "name": "Cinnamon Teal Publishing"
+    },
+    {
+      "id": 24,
+      "name": "HarperCollins Publishers India"
+    },
+    {
+      "id": 25,
+      "name": "Aleph Book Company"
+    },
+    {
+      "id": 26,
+      "name": "Hachette India"
+    },
+    {
+      "id": 27,
+      "name": "Rupa Publications."
+    },
+    {
+      "id": 28,
+      "name": "Roli Books"
+    },
+    {
+      "id": 29,
+      "name": "Penguin Random House India"
+    },
+    {
+      "id": 30,
+      "name": "Arihant Books Publishers"
+    },
+    {
+      "id": 31,
+      "name": "Jaico Publishing House"
+    },
+    {
+      "id": 32,
+      "name": "Khanna Publishers "
+    },
+    {
+      "id": 33,
+      "name": "Laxmi Publications"
+    }
+  ],
+  "book": [
+    {
+      "id": 41,
+      "name": "TEXTBOOK OF ENGINEERING MATHEMATICS",
+      "detail": "M1 Basic Skill Test ",
+      "author": "A.Ganesh & G.BalaSubramanian",
+      "publicationId": 21,
+      "publicationName": "V.G.S Publication",
+      "departmentId": 1,
+      "departmentName": "Electronics & Communication Engieering",
+      "price": 321,
+      "quantity": 100,
+      "available": 100,
+      "rent": 0
+    },
+    {
+      "id": "42",
+      "name": "Engineering Chemistry",
+      "detail": "Engineering Chemistry aims to provide clear and sufficient understanding of chemistry for students of engineering.",
+      "author": " A. Nityananda Shetty, R. V. Gadag",
+      "publicationId": 26,
+      "publicationName": "Hachette India",
+      "departmentId": 15,
+      "departmentName": "Agricultural and Food Engineering",
+      "price": 313,
+      "quantity": 115,
+      "available": 115,
+      "rent": 0
+    },
+    {
+      "id": "43",
+      "name": "Basic Electrical Engineering",
+      "detail": "Basic Electrical Engineering",
+      "author": "DP Kothari & Nagrath, Tata McGraw Hill",
+      "publicationId": 31,
+      "publicationName": "Jaico Publishing House",
+      "departmentId": 4,
+      "departmentName": "Electrical & Electronics Engineering",
+      "price": 567,
+      "quantity": 31
+    },
+    {
+      "id": "44",
+      "name": "Computer Aided Civil Engineering Drawing",
+      "detail": "Computer Aided Civil Engineering Drawing",
+      "author": " Sharma & Gurucharan Singh,",
+      "publicationId": 26,
+      "publicationName": "Hachette India",
+      "departmentId": 3,
+      "departmentName": "Civil Engieering",
+      "price": 413,
+      "quantity": 96
+    },
+    {
+      "id": "45",
+      "name": "Energy Science & Engineering",
+      "detail": "Energy Science & Engineering",
+      "author": "Chakrabarti A, PHI",
+      "publicationId": 32,
+      "publicationName": "Khanna Publishers ",
+      "departmentId": 3,
+      "departmentName": "Civil Engieering",
+      "price": 1321,
+      "quantity": 31
+    },
+    {
+      "id": "46",
+      "name": "Disaster Preparedness & Planning",
+      "detail": "Disaster Preparedness & Planning",
+      "author": ", Singh B.K., Rajat Publication",
+      "publicationId": 28,
+      "publicationName": "Roli Books",
+      "departmentId": 3,
+      "departmentName": "Civil Engieering",
+      "price": 615,
+      "quantity": 27
+    },
+    {
+      "id": "47",
+      "name": "Electrical Circuit Analysis",
+      "detail": "Electrical Circuit Analysis",
+      "author": " Asfaq Hussain,",
+      "publicationId": 32,
+      "publicationName": "Khanna Publishers ",
+      "departmentId": 4,
+      "departmentName": "Electrical & Electronics Engineering",
+      "price": 413,
+      "quantity": 35
+    },
+    {
+      "id": "48",
+      "name": " Analog Electronics",
+      "detail": "Analog Electronics",
+      "author": "L.K.Maheshwar",
+      "publicationId": 33,
+      "publicationName": "Laxmi Publications",
+      "departmentId": 4,
+      "departmentName": "Electrical & Electronics Engineering",
+      "price": 489,
+      "quantity": 18
+    },
+    {
+      "id": "49",
+      "name": "Engineering Mechanics",
+      "detail": "Engineering Mechanics",
+      "author": "R.S. Khurmi",
+      "publicationId": 30,
+      "publicationName": "Arihant Books Publishers",
+      "departmentId": 5,
+      "departmentName": "Mechanical Engieering",
+      "price": 392,
+      "quantity": 62
+    },
+    {
+      "id": "50",
+      "name": " Fluid Mechanics and Fluid Machines",
+      "detail": " Fluid Mechanics and Fluid Machines",
+      "author": " Sadhu Singh",
+      "publicationId": 32,
+      "publicationName": "Khanna Publishers ",
+      "departmentId": 5,
+      "departmentName": "Mechanical Engieering",
+      "price": 919,
+      "quantity": 49
+    },
+    {
+      "id": "51",
+      "name": "Computer Organization & Architecture",
+      "detail": "Computer Organization & Architecture",
+      "author": " B. Ram",
+      "publicationId": 25,
+      "publicationName": "Aleph Book Company",
+      "departmentId": 2,
+      "departmentName": "Computer Science Engieering",
+      "price": 556,
+      "quantity": 81
+    },
+    {
+      "id": "52",
+      "name": "Database Management Systems",
+      "detail": "Database Management Systems",
+      "author": "E. Ramez",
+      "publicationId": 24,
+      "publicationName": "HarperCollins Publishers India",
+      "departmentId": 2,
+      "departmentName": "Computer Science Engieering",
+      "price": 920,
+      "quantity": 8
+    },
+    {
+      "id": "53",
+      "name": "Object Oriented Programming",
+      "detail": "Object Oriented Programming",
+      "author": "Balaguruswamy,",
+      "publicationId": 29,
+      "publicationName": "Penguin Random House India",
+      "departmentId": 2,
+      "departmentName": "Computer Science Engieering",
+      "price": 747,
+      "quantity": 16
+    },
+    {
+      "id": "54",
+      "name": "Cryptography & Network Security",
+      "detail": "Cryptography & Network Security",
+      "author": "Atul Kahate, McGraw Hill",
+      "publicationId": 30,
+      "publicationName": "Arihant Books Publishers",
+      "departmentId": 2,
+      "departmentName": "Computer Science Engieering",
+      "price": 224,
+      "quantity": 22
+    }
+  ],
+  "student": [
+    {
+      "id": 101,
+      "name": "Rama",
+      "departmentId": 2,
+      "departmentName": "Computer Science Engieering",
+      "gender": "M",
+      "dob": "06/06/1997",
+      "mobile": 987654321,
+      "address": "Chota Anjaih nagar Gachibowli Hyderabad",
+      "city": "Hyderabad",
+      "pincode": 500072,
+      "email": "Rama981@gmail.com"
+    },
+    {
+      "id": 102,
+      "name": "Sita",
+      "departmentId": 5,
+      "departmentName": "Mechanical Engieering",
+      "gender": "F",
+      "dob": "1995-03-14T18:30:00.000Z",
+      "mobile": 983217654,
+      "address": "Pramod nagar Miyapur Hyderabad",
+      "city": "Hyderabad",
+      "pincode": "500052",
+      "email": "Sitasweety@gmail.com"
+    }
+  ]
+}

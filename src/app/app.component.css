@@ -1,0 +1,155 @@
+body 
+{background:#CCFFCC;
+    font-family:Verdana;
+    /*CCFFCC*/
+}
+
+
+#head
+{
+    width:1000px;
+    height:100px;
+    border:solid 1px green;
+   /* box-shadow:0px 0px 15px 0px green;*/
+    margin:0 auto;
+    text-align: center;
+    background:#fff;
+}
+
+#login
+{
+    height:180px;
+    width:350px;
+    border:solid 0px green;
+    margin:0 auto;
+    margin-top:0px;
+    
+    }
+    /* // #img
+    // {
+    // height:320px;
+    // width:700px;
+    // border:solid 0px green;
+    // margin:0 auto;
+    // margin-top:0px;
+    
+    // } */
+    
+    .tbl
+    {
+        width:100%;
+        border:solid 1px green;
+        
+        background:#CCFFCC;
+        }
+        
+        .tblhead
+        {
+            background:green;
+            color:#fff;
+            text-align:center;
+            font-weight:bold;
+            height:30px;
+              background:linear-gradient(Green, #00C600);
+            
+            }
+            
+       .lbl
+       {
+           text-align:right;
+           color:Green;
+           }
+           
+           .txt
+           {
+               height:20px;
+               width:150px;
+               border:solid 1px green;
+               background:#FFE8D9;
+               }
+               .txt:hover
+           {
+               
+               border:solid 1px #ff6600;
+               }
+               
+               .btn:hover
+               {
+                   background:green;
+                   color:#fff;
+                   font-weight:bold;
+                    border:solid 2px #ff6600;
+                   height:30px;
+                     background:linear-gradient(Green, #00C600);
+                   }
+                   .btn
+               {
+                   background:#ff6600;
+                   color:#fff;
+                   font-weight:bold;
+                   border:solid 2px green;height:30px; cursor:pointer;
+                    transition:background-color 1s ease;
+                  
+                  background:linear-gradient(#ff6600, #FF8635);
+                   }
+ 
+#main
+{
+    width:1000px;
+    height:550px;
+    border:solid 1px green;
+   /* box-shadow:0px 0px 15px 0px green;*/
+    margin:0 auto;
+   
+      background:#fff;
+}
+
+#menu
+{
+    width:230px;
+    height:550px;
+    border:solid 0px red;
+    float:left;
+     background:#fff;
+    }
+    
+    #detail
+{
+    width:760px;
+    height:550px;
+    border:solid 0px red;
+    float:left;
+    margin-left:5px;
+    background:#fff;
+    }
+    
+     .btnmenu
+               {
+                   background:green;
+                   color:#fff;
+                   font-weight:bold;
+                   width:100%;
+                   height:40px;
+                   font-size:16px; cursor:pointer;
+                   }
+                   .btnmenu:hover
+               {
+                   background:#ff6600;
+                   color:#fff;
+                   font-weight:bold;
+ transition: background-color .6s ease;
+
+                   }
+                   
+        .lnk
+        {
+            color:Green;
+            font-weight:bold;
+            }
+            .lnk:hover
+            {
+               color:#ff6600;
+                 font-weight:bold;
+                }
+            
+            

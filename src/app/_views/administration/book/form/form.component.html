@@ -1,0 +1,86 @@
+<div>
+    <h3 style="text-align:justify;">{{Title}}</h3>
+</div>
+<div>
+<form [formGroup]="form">
+    <div >
+        <mat-form-field appearance="outline" style="margin-left: 6px;" >
+            <mat-label> ID</mat-label>
+            <input matInput placeholder="ID" autocomplete="off" formControlName="id"  required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <!-- <mat-error class="error-message" *ngIf="form.get('id').hasError && (form.get('id').dirty || form.get('id').touched)">ID is Required</mat-error>  -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>Book Name</mat-label>
+            <input matInput placeholder="Publication Name" autocomplete="off" formControlName="name" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('name').hasError && (form.get('name').dirty || form.get('name').touched)">Book name is Required</mat-error> 
+        </mat-form-field>
+
+    </div>
+    <div>
+
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>Book Detail</mat-label>
+            <input matInput placeholder="Book Detail" autocomplete="off" formControlName="detail" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('detail').hasError && (form.get('detail').dirty || form.get('detail').touched)">Deatails are Required</mat-error> 
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>Author</mat-label>
+            <input matInput placeholder="Author" autocomplete="off" formControlName="author" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('author').hasError && (form.get('author').dirty || form.get('author').touched)">Author name is Required</mat-error> 
+        </mat-form-field>
+
+    </div>
+    <div>
+
+        <mat-form-field style="margin-left: 33px;">
+            <mat-label>Department Name</mat-label>
+            <mat-select formControlName="departmentId" required>
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let dept of department" [value]="dept.id">
+                {{dept.name}}
+              </mat-option>
+            </mat-select>
+            <mat-error class="error-message" *ngIf="form.get('departmentName').hasError && (form.get('departmentName').dirty || form.get('departmentName').touched)">Department  name is Required</mat-error> 
+           
+          </mat-form-field>
+          
+        <mat-form-field style="margin-left: 20px;">
+            <mat-label>Publication Name</mat-label>
+            <mat-select formControlName="publicationId" required>
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let pub of publication" [value]="pub.id">
+                {{pub.name}}
+              </mat-option>
+            </mat-select>
+            <mat-error class="error-message" *ngIf="form.get('publicationName').hasError && (form.get('publicationName').dirty || form.get('publicationName').touched)">Publication name is Required</mat-error> 
+          </mat-form-field>
+    </div>
+    <div>
+
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>price</mat-label>
+            <input matInput placeholder="Price" type="number" autocomplete="off" formControlName="price" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('price').hasError && (form.get('price').dirty || form.get('price').touched)">Price  is Required</mat-error> 
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>Quantity</mat-label>
+            <input matInput placeholder="Quantity" type="number" autocomplete="off" formControlName="quantity" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('quantity').hasError && (form.get('quantity').dirty || form.get('quantity').touched)">Quantity is Required</mat-error> 
+        </mat-form-field>
+    </div>
+  
+    <div style="margin-top: 9px;">
+        <button mat-raised-button color="primary" (click)="save(btnText)" >{{btnText}}</button>
+        <button mat-raised-button color="accent" routerLink="/admin/book"  style="margin-left: 10px;">Back</button>
+    </div>
+</form>
+</div>

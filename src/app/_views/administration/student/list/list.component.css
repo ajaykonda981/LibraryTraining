@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+  }
+  
+  
+  th.mat-header-cell, td.mat-cell {
+      text-align: center;
+      border: 2px solid rgb(61, 223, 83);
+      padding: 0 !important;
+  }
+/* 
+  td.mat-cell:nth-child(2) {
+    
+    border-left: 5px solid #ffa600;
+    border: 2px solid rgb(236, 73, 8);
+  }
+   */
+  /* th.mat-header-cell:nth-child(2){
+    border: 2px solid rgb(236, 73, 8);
+  } */
+  td , th {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+  
+.make-gold {
+    background-color: red
+}
+.make-tick{
+    text-align:center; font-size:100%;  color:green;
+
+    font-weight:bold;
+}
+.mat-option:first-child
+{
+    text-align:center; font-size:100%;  color:green;
+
+    font-weight:bold;
+}

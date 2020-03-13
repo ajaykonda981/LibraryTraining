@@ -1,0 +1,96 @@
+<h1></h1>
+<div>
+    <form [formGroup]="form">
+        <div >
+            <mat-form-field appearance="outline" style="margin-left: 6px;" >
+                <mat-label> ID</mat-label>
+                <input matInput placeholder="ID" autocomplete="off" formControlName="id"  required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-error class="error-message" *ngIf="form.get('id').hasError && (form.get('id').dirty || form.get('id').touched)">ID is Required</mat-error>  -->
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline" style="margin-left: 6px;">
+                <mat-label>Student Name</mat-label>
+                <input matInput placeholder="Student Name" autocomplete="off" formControlName="name" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error class="error-message" *ngIf="form.get('name').hasError && (form.get('name').dirty || form.get('name').touched)">Studnet name is Required</mat-error> 
+            </mat-form-field>
+    
+        </div>
+        <div>
+    
+            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                <mat-radio-button value="M" >Male</mat-radio-button>
+                <mat-radio-button value="F">Female</mat-radio-button>
+              </mat-radio-group>
+             
+    
+              <mat-form-field   style="margin-left: 79px;">
+                <input  matInput [matDatepicker]="picker"   placeholder="Date Of Birth" formControlName="dob" >
+                <mat-datepicker-toggle matSuffix  [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker disabled="false" ></mat-datepicker>
+                <mat-error class="error-message" *ngIf="form.get('dob').hasError && (form.get('dob').dirty || form.get('dob').touched)">Date of Birth is Required</mat-error> 
+              </mat-form-field>
+    
+        </div>
+        <div>
+    
+            <mat-form-field appearance="outline" style="margin-left: 6px;">
+                <mat-label>Mobile</mat-label>
+                <input matInput placeholder="Mobile"   autocomplete="off" formControlName="mobile" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error class="error-message" *ngIf="form.get('mobile').hasError && (form.get('mobile').dirty || form.get('mobile').touched)">Mobile No is Required</mat-error> 
+            </mat-form-field>
+              
+            <mat-form-field appearance="outline" style="margin-left: 6px;">
+                <mat-label>Address</mat-label>
+                <input matInput placeholder="Address" autocomplete="off" formControlName="address" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error class="error-message" *ngIf="form.get('address').hasError && (form.get('address').dirty || form.get('address').touched)">Address is Required</mat-error> 
+            </mat-form-field>
+        </div>
+        <div>
+    
+              
+            <mat-form-field appearance="outline" style="margin-left: 6px;">
+                <mat-label>City</mat-label>
+                <input matInput placeholder="City" autocomplete="off" formControlName="city" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error class="error-message" *ngIf="form.get('city').hasError && (form.get('city').dirty || form.get('city').touched)">City is Required</mat-error> 
+            </mat-form-field>
+               
+            <mat-form-field appearance="outline" style="margin-left: 6px;">
+                <mat-label>Pin Code</mat-label>
+                <input matInput placeholder="Pin Code" autocomplete="off" formControlName="pincode" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error class="error-message" *ngIf="form.get('pincode').hasError && (form.get('pincode').dirty || form.get('pincode').touched)">Pincode is Required</mat-error> 
+            </mat-form-field>
+   
+        </div>
+      <div>
+        <mat-form-field appearance="outline" style="margin-left: 6px;">
+            <mat-label>email</mat-label>
+            <input matInput placeholder="email"   autocomplete="off" formControlName="email" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf=" (form.get('email').dirty || form.get('email').touched)">Email is Required</mat-error> 
+             <mat-error *ngIf="form.get('email').errors?.email">Minimum 8 charactors needed.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field style="margin-left: 33px;">
+            <mat-label>Department Name</mat-label>
+            <mat-select formControlName="departmentId" required>
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let dept of department" [value]="dept.id">
+                {{dept.name}}
+              </mat-option>
+            </mat-select>
+            <mat-error class="error-message" *ngIf="form.get('departmentName').hasError && (form.get('departmentName').dirty || form.get('departmentName').touched)">Department  name is Required</mat-error> 
+           
+          </mat-form-field>
+      </div>
+        <div style="margin-top: 9px;">
+            <button mat-raised-button color="primary" (click)="save(btnText)" >{{btnText}}</button>
+            <button mat-raised-button color="accent" routerLink="/admin/student"  style="margin-left: 10px;">Back</button>
+        </div>
+    </form>
+    </div>

@@ -1,0 +1,34 @@
+<div>
+    <h3>{{data.title}}</h3>
+</div>
+<form [formGroup]="form">
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label> ID</mat-label>
+            <input matInput placeholder="ID" autocomplete="off" formControlName="id"  required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <!-- <mat-error class="error-message" *ngIf="form.get('id').hasError && (form.get('id').dirty || form.get('id').touched)">ID is Required</mat-error>  -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="margin-left: 30px;">
+            <mat-label>Department Code</mat-label>
+            <input matInput placeholder="Department Code" autocomplete="off" formControlName="code" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('code').hasError && (form.get('code').dirty || form.get('code').touched)">Department Code is Required</mat-error> 
+        </mat-form-field>
+    </div>
+    <div>
+
+        <mat-form-field appearance="outline" style="width: 488px;">
+            <mat-label>Department Name</mat-label>
+            <input matInput placeholder="Department Name" autocomplete="off" formControlName="name" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-error class="error-message" *ngIf="form.get('name').hasError && (form.get('name').dirty || form.get('name').touched)">Department name is Required</mat-error> 
+        </mat-form-field>
+
+    </div>
+    <div style="margin-top: 9px;">
+        <button mat-raised-button color="primary" (click)="save(this.data.btnText)">{{this.data.btnText}}</button>
+        <button mat-raised-button color="accent" (click)="close()" style="margin-left: 10px;">Close</button>
+    </div>
+</form>
