@@ -1,5 +1,213 @@
 {
   "configurations": [
+    {
+      "id": 1000,
+      "name": "PDEAPI"
+      "configuration":[
+      {
+        "type": "RadioButton",
+        "name": "project",
+        "label": "Project",
+        "values": ["PDEAPI", "TG"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Project is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "DropDown",
+        "name": "component",
+        "label": "Component",
+        "values": ["ENG_PROD", "EMERGING TECH", "INTEGRATION", "TD SUPPORT"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Component is required field",
+        "placeHolder": ""
+      },
+
+      {
+        "type": "DropDown",
+        "name": "softWareRelatedIssue",
+        "label": "Software Related Issue",
+        "values": ["YES", "NO"],
+        "dependent": ["project", "component"],
+        "dependentValue": ["PDEAPI", "ENG_PROD"],
+        "validation": "required",
+        "validationMessage": "Software related issue is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "softwareName",
+        "label": "Software Name",
+        "values": [],
+        "dependent": ["softWareRelatedIssue"],
+        "dependentValue": ["YES"],
+        "validation": "required",
+        "validationMessage": "Software Name is required field",
+        "placeHolder": "Software name"
+      },
+
+
+      {
+        "type": "DropDown",
+        "name": "priority",
+        "label": "Priority",
+        "values": ["P1", "P2", "P3", "P4", "P5"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Priority is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "summary",
+        "label": "Title",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Summary is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "CheckBox",
+        "name": "customfield_10701",
+        "label": "Watchers",
+        "values": ["aganeshkonda", "rvankayala"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Watchers is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "CheckBox",
+        "name": "customfield_11100",
+        "label": "Watchers Group",
+        "values": ["120S_MPE"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Watchers group is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "customfield_14801",
+        "label": "Target Date",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Target Date is required",
+        "placeHolder": "YYYY-MM-DD Format"
+      },
+      {
+        "type": "DropDown",
+        "name": "assignee",
+        "label": "Assignee",
+        "values": ["aganeshkonda"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Assigneed is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "customfield_14604",
+        "label": "To Do Checklist",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "To do checklist is required field",
+        "placeHolder": "Eg: Task1;Task2;"
+      },
+      {
+        "type": "CheckBox",
+        "name": "labels",
+        "label": "Labels",
+        "values": ["pde-request-sys", "API_INTEGRATION", "blitz_test"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Labels is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "DropDown",
+        "name": "issueType",
+        "label": "Issue Type",
+        "values": ["PCS", "MRDA"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Issue type is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "des_leadSite",
+        "label": "Lead Site",
+        "values": ["MSB", "MMY", "MXA", "MTB", "MMP"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Issue type is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "des_fanoutSite",
+        "label": "Fan-out Site",
+        "values": ["MSB", "MMY", "MXA", "MTB", "MMP"],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Fan out site is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "TextBox",
+        "name": "des_summaryOfTask",
+        "label": "Summary of task",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "required",
+        "validationMessage": "Summary of task is required field",
+        "placeHolder": ""
+      },
+     
+      {
+        "type": "TextBox",
+        "name": "des_additionalComments",
+        "label": "Additional Comments",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "Additional comments is required field",
+        "placeHolder": ""
+      },
+      {
+        "type": "Attachment",
+        "name": "fileAttachment",
+        "label": "Attachements",
+        "values": [],
+        "dependent": [],
+        "dependentValue": [],
+        "validation": "",
+        "validationMessage": "",
+        "placeHolder": ""
+      }
+    ]
+    }
   
   ],
   "department": [
